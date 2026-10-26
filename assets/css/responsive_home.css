@@ -1,0 +1,304 @@
+.mq {
+  padding-bottom: calc(.85rem + var(--sab, 0px));
+}
+
+.hero h1,
+.typed {
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 1181px) and (max-height: 700px) {
+  .hero h1 {
+    margin: .6rem 0 .4rem;
+    font-size: clamp(1.7rem, 3.8vw, 3.2rem);
+  }
+
+  .facts {
+    margin-top: 1.1rem;
+  }
+
+  .facts > div {
+    padding: .6rem 1rem;
+  }
+
+  .mq {
+    padding-top: .5rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .facts {
+    width: min(62rem, 100%);
+  }
+}
+
+@media (min-width: 2600px) {
+  .facts {
+    width: min(66rem, 100%);
+  }
+}
+
+@media (max-width: 1180px) {
+  .hero h1 {
+    font-size: clamp(2.2rem, 7vw, 3.8rem);
+    margin: 1.1rem 0 .7rem;
+    max-width: 100%;
+  }
+
+  .hline::before,
+  .hline::after {
+    display: none;
+  }
+
+  .typed {
+    font-size: 1.1rem;
+    min-height: 1.5em;
+  }
+
+  .facts {
+    margin-top: 1.8rem;
+  }
+
+  .facts > div {
+    min-width: 0;
+    padding: 1rem .9rem;
+  }
+
+  .facts b {
+    font-size: 1.7rem;
+  }
+
+  .facts span {
+    font-size: .78rem;
+  }
+
+  .mq {
+    padding-top: .6rem;
+    padding-bottom: calc(.6rem + var(--sab, 0px));
+  }
+
+  .mq-t span {
+    font-size: 1.05rem;
+  }
+
+  .mq-t span::after {
+    margin: 0 1.2rem;
+  }
+}
+
+@media (max-width: 899px) {
+  .facts {
+    grid-template-columns: repeat(2, 1fr);
+    width: min(36rem, 100%);
+  }
+
+  .facts > div:nth-child(odd) {
+    border-left: 0;
+  }
+
+  .facts > div:nth-child(n+3) {
+    border-top: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: clamp(1.9rem, 9vw, 3rem);
+  }
+
+  .typed {
+    font-size: 1.02rem;
+  }
+
+  .facts {
+    width: 100%;
+    margin-top: 1.6rem;
+  }
+
+  .facts > div {
+    padding: .9rem .8rem;
+  }
+
+  .facts b {
+    font-size: 1.5rem;
+  }
+
+  .facts span {
+    font-size: .74rem;
+  }
+
+  .mq-t span {
+    font-size: 1rem;
+  }
+
+  .mq-t span::after {
+    margin: 0 1.1rem;
+  }
+
+  .boot-t {
+    font-size: clamp(1.55rem, 8vw, 2.6rem);
+  }
+}
+
+@media (max-width: 359px) {
+  .hero h1 {
+    font-size: clamp(1.7rem, 9.4vw, 2.2rem);
+  }
+
+  .facts > div {
+    padding: .8rem .6rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .facts {
+    grid-template-columns: 1fr;
+  }
+
+  .facts > div:nth-child(n+2) {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 1180px) and (max-height: 520px) and (orientation: landscape) {
+  .hero h1 {
+    font-size: clamp(1.5rem, 5.2vw, 2.4rem);
+    margin: .6rem 0 .3rem;
+  }
+
+  .typed {
+    font-size: .95rem;
+  }
+
+  .facts {
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    margin-top: .9rem;
+  }
+
+  .facts > div {
+    padding: .55rem .7rem;
+  }
+
+  .facts > div:nth-child(odd) {
+    border-left: 1px solid var(--line);
+  }
+
+  .facts > div:first-child {
+    border-left: 0;
+  }
+
+  .facts > div:nth-child(n+3) {
+    border-top: 0;
+  }
+
+  .facts b {
+    font-size: 1.25rem;
+  }
+
+  .facts span {
+    font-size: .68rem;
+  }
+
+  .mq {
+    padding-top: .35rem;
+    padding-bottom: calc(.35rem + var(--sab, 0px));
+  }
+
+  .mq-t span {
+    font-size: .85rem;
+  }
+
+  .boot-num {
+    font-size: clamp(2.2rem, 16vh, 4rem);
+  }
+
+  .boot-pct {
+    bottom: max(.8rem, 5vh);
+    gap: .5rem;
+  }
+
+  .boot-c {
+    gap: .6rem;
+  }
+}
+
+@media (hover: none) {
+
+  .facts > div:hover::after {
+    opacity: 0;
+  }
+
+  .facts > div:hover::before {
+    transform: scaleX(0);
+  }
+
+  .facts > div:hover b {
+    text-shadow: none;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1180px) and (min-height: 521px) {
+  .hero h1 {
+    font-size: clamp(3rem, 8.6vw, 5rem);
+    margin: 1.4rem 0 .9rem;
+  }
+
+  .typed {
+    font-size: 1.3rem;
+  }
+
+  .facts > div {
+    padding: 1.1rem 1.2rem;
+  }
+
+  .facts b {
+    font-size: clamp(1.4rem, 3.4vw, 1.9rem);
+  }
+
+  .facts span {
+    font-size: .84rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1180px) and (min-height: 521px) {
+  .facts {
+    grid-template-columns: repeat(4, 1fr);
+    width: min(46rem, 100%);
+    margin-top: 2.2rem;
+  }
+
+  .facts > div {
+    padding: 1.2rem .9rem;
+  }
+
+  .facts > div:nth-child(n) {
+    border-top: 0;
+    border-left: 1px solid var(--line);
+  }
+
+  .facts > div:first-child {
+    border-left: 0;
+  }
+
+  .facts b {
+    font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+  }
+
+  .facts span {
+    font-size: .8rem;
+  }
+}
+
+@supports selector(:has(*)) {
+  @media (max-width: 1180px) {
+    .mq {
+      transition: filter .3s;
+    }
+
+    body:has(.nav.open) .mq {
+      filter: brightness(.4) blur(2px);
+    }
+  }
+}
