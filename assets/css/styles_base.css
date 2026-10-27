@@ -1071,20 +1071,55 @@ i.fa-solid.ar.fa-globe {
   letter-spacing: .01em;
 }
 
-@media (min-width: 1181px) and (max-width: 1260px) {
+.hdr .in > .logo,
+.hdr .in > a.logo {
+  flex: none;
+}
+
+.hdr .bar {
+  min-width: 0;
+}
+
+@media (min-width: 1181px) {
+  html:lang(ru) .nav,
+  html:lang(uk) .nav {
+    gap: .1rem;
+  }
+
   html:lang(ru) .nav>a,
   html:lang(uk) .nav>a,
-  html:lang(ru) .dd-btn,
-  html:lang(uk) .dd-btn {
-    font-size: .64rem;
+  html:lang(ru) .nav .dd>.dd-btn,
+  html:lang(uk) .nav .dd>.dd-btn {
     padding: 0 .5rem;
+    gap: .35rem;
+    font-size: .6rem;
+    letter-spacing: .01em;
   }
 }
 
-html:lang(ru) .dd-item b,
-html:lang(uk) .dd-item b {
-  -webkit-text-stroke: .3px currentColor;
+@media (min-width: 1181px) and (max-width: 1599px) {
+  html:lang(ru) .hdr .in,
+  html:lang(uk) .hdr .in {
+    gap: .8rem;
+  }
+
+  html:lang(ru) .logo small,
+  html:lang(uk) .logo small {
+    display: none;
+  }
 }
+
+@media (min-width: 1181px) and (max-width: 1299px) {
+  html:lang(ru) .nav>a,
+  html:lang(uk) .nav>a,
+  html:lang(ru) .nav .dd>.dd-btn,
+  html:lang(uk) .nav .dd>.dd-btn {
+    padding: 0 .35rem;
+    font-size: .54rem;
+    letter-spacing: 0;
+  }
+}
+
 
 .cta {
   display: flex;
