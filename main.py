@@ -25,6 +25,18 @@ def is_blocked(filename):
 def home():
     return send_from_directory(BASE_DIR, "home.html")
 
+PAGES = {
+    "documents/terms":          "documents/terms.html",
+}
+PAGES["documents"] = PAGES["documents/terms"]
+
+
+def resolve_page(filename):
+    key = filename.strip("/")
+    if key.endswith(".html"):
+        key = key[:-5]
+    return PAGES.get(key)
+
 
 def resolve_file(filename):
     clean = filename.strip("/")
@@ -61,6 +73,10 @@ def find_from_root(filename):
 
 @app.route("/<path:filename>")
 def serve_file(filename):
+    page = resolve_page(filename)
+    if page:
+        return send_from_directory(BASE_DIR, page)
+
     if is_blocked(filename):
         return abort(404)
 
