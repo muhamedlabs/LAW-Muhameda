@@ -42,7 +42,7 @@ html{scrollbar-color:var(--pink) #121014;scrollbar-width:thin}
 .bg>*{position:absolute;inset:0;pointer-events:none}
 .bg-photo{
   inset:-3%;
-  background:url('../images/background/terms.webp') center/cover no-repeat;
+  background:url('../images/background/5.webp') center/cover no-repeat;
   transform:translate3d(var(--px,0),var(--py,0),0) scale(1.06);
   animation:photoBreath 24s ease-in-out infinite alternate;
   filter:brightness(.46) saturate(1.05) contrast(1.12);
