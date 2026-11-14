@@ -23,9 +23,11 @@
   }
 
   const pad = n => String(n + 1).padStart(2, '0');
-  function block(b) {
+  const LI = { prohibited: ['fa-solid fa-xmark'], notcollect: ['fa-solid fa-xmark'], collect: ['fa-solid fa-id-badge', 'fa-solid fa-keyboard', 'fa-solid fa-microchip', 'fa-solid fa-credit-card'], purposes: ['fa-solid fa-gears', 'fa-solid fa-shield-halved', 'fa-solid fa-life-ring', 'fa-solid fa-chart-line', 'fa-solid fa-credit-card', 'fa-solid fa-gavel'], basis: ['fa-solid fa-circle-check', 'fa-solid fa-file-signature', 'fa-solid fa-scale-balanced', 'fa-solid fa-gavel'], sharing: ['fa-solid fa-share-nodes', 'fa-solid fa-server', 'fa-solid fa-credit-card', 'fa-solid fa-building-columns'], storage: ['fa-solid fa-clock', 'fa-solid fa-file-lines', 'fa-solid fa-receipt', 'fa-solid fa-comments'], rights: ['fa-solid fa-eye', 'fa-solid fa-pen', 'fa-solid fa-trash', 'fa-solid fa-hand', 'fa-solid fa-file-export', 'fa-solid fa-flag'], ads: ['fa-solid fa-lock', 'fa-solid fa-bullhorn'], paid: ['fa-solid fa-check', 'fa-solid fa-rotate-left', 'fa-solid fa-receipt', 'fa-solid fa-bullhorn'], contacts: ['fa-brands fa-telegram', 'fa-solid fa-envelope', 'fa-brands fa-discord'] };
+  const liIcon = (id, k) => { const a = LI[id]; return a ? a[k % a.length] : 'fa-solid fa-circle-check'; };
+  function block(b, id) {
     if (b.p) return `<p>${b.p}</p>`;
-    if (b.ul) return `<ul>${b.ul.map(li => `<li>${li}</li>`).join('')}</ul>`;
+    if (b.ul) return `<ul>${b.ul.map((li, k) => `<li><i class="li-i ${liIcon(id, k)}" aria-hidden="true"></i>${li}</li>`).join('')}</ul>`;
     if (b.note) return `<div class="note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i><div>${b.note}</div></div>`;
     if (b.warn) return `<div class="warn"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i><div>${b.warn}</div></div>`;
     return '';
@@ -35,7 +37,7 @@
   const renderDoc = d => d.sections.map((s, i) =>
     `<section id="${s.id}" class="sec rv" data-n="${pad(i)}"><h2><span class="n">${pad(i)}</span>${s.t}` +
     `<span class="sic" aria-hidden="true"><i class="fa-solid fa-${ICO[s.id] || 'circle'}"></i></span>` +
-    `</h2>${s.b.map(block).join('')}</section>`
+    `</h2>${s.b.map(b => block(b, s.id)).join('')}</section>`
   ).join('');
   const text = (sel, v) => { const el = $(sel); if (el) el.textContent = v; };
 

@@ -16,7 +16,7 @@
             { h: 'Соцсети и мессенджеры', items: [{ i: 'fa-brands fa-discord', t: 'Discord' }, { i: 'fa-brands fa-telegram', t: 'Telegram' }, { i: 'fa-brands fa-youtube', t: 'YouTube' }, { i: 'fa-brands fa-tiktok', t: 'TikTok' }, { i: 'fa-brands fa-instagram', t: 'Instagram' }, { i: 'fa-brands fa-facebook', t: 'Facebook' }, { i: 'fa-brands fa-x-twitter', t: 'X (Twitter)' }, { i: 'fa-brands fa-vk', t: 'ВКонтакте' }] },
             { h: 'Проекты и услуги', items: [{ i: 'fa-solid fa-robot', t: 'Боты' }, { i: 'fa-solid fa-gamepad', t: 'Игры' }, { i: 'fa-solid fa-bullhorn', t: 'Реклама и платные услуги' }] }
           ], foot: 'Сами соцсети и мессенджеры не наши. Наши — только страницы, каналы и боты в них.', ok: 'Понятно' } },
-        home: 'Главная',
+        home: 'Первичная',
         privacy: 'Правила приватности',
         h1a: 'Главные',
         h1b: 'правила',
@@ -115,7 +115,7 @@
             { h: 'Соцмережі та месенджери', items: [{ i: 'fa-brands fa-discord', t: 'Discord' }, { i: 'fa-brands fa-telegram', t: 'Telegram' }, { i: 'fa-brands fa-youtube', t: 'YouTube' }, { i: 'fa-brands fa-tiktok', t: 'TikTok' }, { i: 'fa-brands fa-instagram', t: 'Instagram' }, { i: 'fa-brands fa-facebook', t: 'Facebook' }, { i: 'fa-brands fa-x-twitter', t: 'X (Twitter)' }, { i: 'fa-brands fa-vk', t: 'ВКонтакте' }] },
             { h: 'Проєкти та послуги', items: [{ i: 'fa-solid fa-robot', t: 'Боти' }, { i: 'fa-solid fa-gamepad', t: 'Ігри' }, { i: 'fa-solid fa-bullhorn', t: 'Реклама та платні послуги' }] }
           ], foot: 'Самі соцмережі та месенджери не наші. Наші — лише сторінки, канали й боти в них.', ok: 'Зрозуміло' } },
-        home: 'Головна',
+        home: 'Первинна',
         privacy: 'Правила приватності',
         h1a: 'Головні',
         h1b: 'правила',
@@ -212,7 +212,7 @@
             { h: 'Social networks and messengers', items: [{ i: 'fa-brands fa-discord', t: 'Discord' }, { i: 'fa-brands fa-telegram', t: 'Telegram' }, { i: 'fa-brands fa-youtube', t: 'YouTube' }, { i: 'fa-brands fa-tiktok', t: 'TikTok' }, { i: 'fa-brands fa-instagram', t: 'Instagram' }, { i: 'fa-brands fa-facebook', t: 'Facebook' }, { i: 'fa-brands fa-x-twitter', t: 'X (Twitter)' }, { i: 'fa-brands fa-vk', t: 'VKontakte' }] },
             { h: 'Projects and offers', items: [{ i: 'fa-solid fa-robot', t: 'Bots' }, { i: 'fa-solid fa-gamepad', t: 'Games' }, { i: 'fa-solid fa-bullhorn', t: 'Advertising and paid offers' }] }
           ], foot: 'The networks and messengers themselves are not ours. Only our pages, channels and bots on them are.', ok: 'Got it' } },
-        home: 'Home',
+        home: 'Prime',
         privacy: 'Privacy Rules',
         h1a: 'Main',
         h1b: 'Rules',

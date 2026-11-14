@@ -572,3 +572,8 @@ html.pop-lock{overflow:hidden}
   background:linear-gradient(180deg,#ff2a52,var(--pink) 60%,#d91238);clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%);transition:filter .25s}
 .pop-ok:hover{filter:brightness(1.12)}
 @media print{.pop{display:none!important}.star{background:none;border:0}.star i{display:none}}
+
+.sec li::before{content:none!important}
+.sec li{padding-left:36px}
+.sec li>.li-i{position:absolute;left:3px;top:calc(.5em + 9px);width:22px;text-align:center;font-size:.92em;line-height:1;color:var(--pink)}
+.sec li:hover>.li-i{filter:drop-shadow(0 0 6px rgba(var(--pink-rgb),.8))}
