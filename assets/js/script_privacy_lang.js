@@ -6,8 +6,8 @@
     ru: {
       htmlLang: 'ru',
       meta: {
-        title: 'Правила приватности — Мухамед Ads',
-        desc: 'Правила приватности сайта, ботов и сервисов креативной и технологической сети Мухамед Ads: какие данные мы получаем, зачем и какие у вас права.'
+        title: 'Мухамед Ads — креативно-технологическая сеть | Правила приватности',
+        desc: 'Правила приватности, использования и защиты персональных данных пользователей сайта, ботов и цифровых сервисов креативно-технологической сети Muhamed Ads.'
       },
       ui: {
         eyebrow: 'Кодекс сети',
@@ -16,12 +16,12 @@
             { h: 'Соцсети и мессенджеры', items: [{ i: 'fa-brands fa-discord', t: 'Discord' }, { i: 'fa-brands fa-telegram', t: 'Telegram' }, { i: 'fa-brands fa-youtube', t: 'YouTube' }, { i: 'fa-brands fa-tiktok', t: 'TikTok' }, { i: 'fa-brands fa-instagram', t: 'Instagram' }, { i: 'fa-brands fa-facebook', t: 'Facebook' }, { i: 'fa-brands fa-x-twitter', t: 'X (Twitter)' }, { i: 'fa-brands fa-vk', t: 'ВКонтакте' }] },
             { h: 'Проекты и услуги', items: [{ i: 'fa-solid fa-robot', t: 'Боты' }, { i: 'fa-solid fa-gamepad', t: 'Игры' }, { i: 'fa-solid fa-bullhorn', t: 'Реклама и платные услуги' }] }
           ], foot: 'Сами соцсети и мессенджеры не наши. Наши — только страницы, каналы и боты в них.', ok: 'Понятно' } },
-        home: 'Главная',
+        home: 'Первичная',
         rules: 'Главные правила',
         h1a: 'Правила',
         h1b: 'приватности',
-        sub: 'Ваши данные — ваши.',
-        sub2: 'Какие данные мы получаем, зачем они нужны, кому передаём и как вы можете их проверить, исправить или удалить. Ничего не продаём и не прячем в мелком шрифте: прозрачно и по делу.',
+        sub: 'Правила защиты данных всей сети Мухамед Ads.',
+        sub2: 'Какие данные мы собираем, с какой целью используем, где храним и кому можем передавать. Рассказываем о способах проверки, изменения и удаления информации, обеспечивая прозрачность всех процессов и защиту ваших персональных данных.',
         boot: { stamp: '19.10.2026', brand: 'Мухамед', net: 'Креативная и технологическая сеть', bs1: 'Запуск кодекса', bs2: 'Правила приватности', bs3: 'Главные правила', bs4: 'Кодекс готов', bhl: 'Кодекс сети' },
         toc: 'Содержание',
         print: 'Печать',
@@ -108,8 +108,8 @@
     uk: {
       htmlLang: 'uk',
       meta: {
-        title: 'Правила приватності — Мухамед Ads',
-        desc: 'Правила приватності сайту, ботів і сервісів креативної та технологічної мережі Мухамед Ads: які дані ми отримуємо, навіщо та які у вас права.'
+        title: 'Мухамед Ads — креативно-технологічна мережа | Правила приватності',
+        desc: 'Правила приватності, використання та захисту персональних даних користувачів сайту, ботів і цифрових сервісів креативно-технологічної мережі Muhamed Ads.'
       },
       ui: {
         eyebrow: 'Кодекс мережі',
@@ -118,12 +118,12 @@
             { h: 'Соцмережі та месенджери', items: [{ i: 'fa-brands fa-discord', t: 'Discord' }, { i: 'fa-brands fa-telegram', t: 'Telegram' }, { i: 'fa-brands fa-youtube', t: 'YouTube' }, { i: 'fa-brands fa-tiktok', t: 'TikTok' }, { i: 'fa-brands fa-instagram', t: 'Instagram' }, { i: 'fa-brands fa-facebook', t: 'Facebook' }, { i: 'fa-brands fa-x-twitter', t: 'X (Twitter)' }, { i: 'fa-brands fa-vk', t: 'ВКонтакте' }] },
             { h: 'Проєкти та послуги', items: [{ i: 'fa-solid fa-robot', t: 'Боти' }, { i: 'fa-solid fa-gamepad', t: 'Ігри' }, { i: 'fa-solid fa-bullhorn', t: 'Реклама та платні послуги' }] }
           ], foot: 'Самі соцмережі та месенджери не наші. Наші — лише сторінки, канали й боти в них.', ok: 'Зрозуміло' } },
-        home: 'Головна',
+        home: 'Первинна',
         rules: 'Головні правила',
         h1a: 'Правила',
         h1b: 'приватності',
-        sub: 'Ваші дані — ваші.',
-        sub2: 'Які дані ми отримуємо, навіщо вони потрібні, кому передаємо і як ви можете їх перевірити, виправити чи видалити. Нічого не продаємо й не ховаємо в дрібному шрифті: прозоро й по ділу.',
+        sub: 'Правила захисту даних усієї мережі Мухамед Ads.',
+        sub2: 'Які дані ми збираємо, з якою метою використовуємо, де зберігаємо та кому можемо передавати. Розповідаємо про способи перегляду, зміни й видалення інформації, забезпечуючи прозорість усіх процесів і захист ваших персональних даних.',
         boot: { stamp: '19.10.2026', brand: 'Мухамед', net: 'Креативна та технологічна мережа', bs1: 'Запуск кодексу', bs2: 'Головні правила', bs3: 'Правила приватності', bs4: 'Кодекс готовий', bhl: 'Кодекс мережі' },
         toc: 'Зміст',
         print: 'Друк',
@@ -210,8 +210,8 @@
     en: {
       htmlLang: 'en',
       meta: {
-        title: 'Privacy rules — Muhamed Ads',
-        desc: 'Privacy rules for the website, bots and services of the Muhamed Ads creative and technology network: what data we receive, why, and what rights you have.'
+        title: 'Muhamed Ads — creative & technology network | Privacy policy',
+        desc: 'Privacy, use and Protection rules for the personal data of users of the websites, bots and digital services of the Muhamed Ads creative & technology network.'
       },
       ui: {
         eyebrow: 'Network code',
@@ -220,12 +220,12 @@
             { h: 'Social networks and messengers', items: [{ i: 'fa-brands fa-discord', t: 'Discord' }, { i: 'fa-brands fa-telegram', t: 'Telegram' }, { i: 'fa-brands fa-youtube', t: 'YouTube' }, { i: 'fa-brands fa-tiktok', t: 'TikTok' }, { i: 'fa-brands fa-instagram', t: 'Instagram' }, { i: 'fa-brands fa-facebook', t: 'Facebook' }, { i: 'fa-brands fa-x-twitter', t: 'X (Twitter)' }, { i: 'fa-brands fa-vk', t: 'VKontakte' }] },
             { h: 'Projects and offers', items: [{ i: 'fa-solid fa-robot', t: 'Bots' }, { i: 'fa-solid fa-gamepad', t: 'Games' }, { i: 'fa-solid fa-bullhorn', t: 'Advertising and paid offers' }] }
           ], foot: 'The networks and messengers themselves are not ours. Only our pages, channels and bots on them are.', ok: 'Got it' } },
-        home: 'Home',
+        home: 'Prime',
         rules: 'Main rules',
         h1a: 'Privacy',
         h1b: 'rules',
-        sub: 'Your data stays yours.',
-        sub2: 'What data we receive, why we need it, who gets it and how you can check, correct or delete it. We sell nothing and hide nothing in fine print: transparent and to the point.',
+        sub: 'Data protection policy for the entire Muhamed Ads network.',
+        sub2: 'What data we collect, why we use it, where it is stored, and who we may share it with. We explain how you can access, modify, or delete your information while ensuring transparency throughout our processes and protecting your personal data.',
         boot: { stamp: '19.10.2026', brand: 'Muhamed', net: 'Creative & technology network', bs1: 'Starting the codex', bs2: 'Main rules', bs3: 'Privacy rules', bs4: 'Codex ready', bhl: 'Network codex' },
         toc: 'Contents',
         print: 'Print',
