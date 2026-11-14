@@ -6,8 +6,8 @@
     ru: {
       htmlLang: 'ru',
       meta: {
-        title: 'Главные правила — Мухамед Ads',
-        desc: 'Главные правила сайта, ботов и сервисов креативной и технологической сети Мухамед Ads.'
+        title: 'Мухамед Ads — креативно-технологическая сеть | Главные правила',
+        desc: 'Главные правила использования сайта, ботов и цифровых сервисов, входящих в состав креативно-технологической сети Muhamed Ads.'
       },
       ui: {
         eyebrow: 'Кодекс сети',
@@ -20,8 +20,8 @@
         privacy: 'Правила приватности',
         h1a: 'Главные',
         h1b: 'правила',
-        sub: 'Одни правила. Без юридической воды.',
-        sub2: 'Что можно, чего нельзя и как мы бережём ваши данные — всё о сайте, ботах и других проектах сети. Без мелкого шрифта и скрытых подвохов: честно и по делу.',
+        sub: 'Общие правила для всей сети Мухамед Ads.',
+        sub2: 'Что разрешено, что запрещено и как мы защищаем ваши данные. Все правила и принципы работы сайта, ботов и проектов Muhamed Ads в одном месте. Прозрачно, понятно и без скрытых условий.',
         boot: { stamp: '19.10.2026', brand: 'Мухамед', net: 'Креативная и технологическая сеть', bs1: 'Запуск кодекса', bs2: 'Главные правила', bs3: 'Правила приватности', bs4: 'Кодекс готов', bhl: 'Кодекс сети' },
         toc: 'Содержание',
         print: 'Печать',
@@ -105,8 +105,8 @@
     uk: {
       htmlLang: 'uk',
       meta: {
-        title: 'Головні правила — Мухамед Ads',
-        desc: 'Головні правила сайту, ботів і сервісів креативної та технологічної мережі Мухамед Ads.'
+        title: 'Мухамед Ads — креативно-технологічна мережа | Головні правила',
+        desc: 'Головні правила користування сайтом, ботами та цифровими сервісами, що входять до складу креативно-технологічної мережі Muhamed Ads.'
       },
       ui: {
         eyebrow: 'Кодекс мережі',
@@ -119,8 +119,8 @@
         privacy: 'Правила приватності',
         h1a: 'Головні',
         h1b: 'правила',
-        sub: 'Одні правила. Без юридичної води.',
-        sub2: 'Що можна, чого не можна і як ми бережемо ваші дані — усе про сайт, ботів та інші проєкти мережі. Без дрібного шрифту й прихованих підступів: чесно й по ділу.',
+        sub: 'Загальні правила для всієї мережі Muhamed Ads.',
+        sub2: 'Що дозволено, що заборонено та як ми захищаємо ваші дані. Усі правила й принципи роботи сайту, ботів і проєктів Muhamed Ads в одному місці. Прозоро, зрозуміло та без прихованих умов.',
         boot: { stamp: '19.10.2026', brand: 'Мухамед', net: 'Креативна та технологічна мережа', bs1: 'Запуск кодексу', bs2: 'Головні правила', bs3: 'Правила приватності', bs4: 'Кодекс готовий', bhl: 'Кодекс мережі' },
         toc: 'Зміст',
         print: 'Друк',
@@ -202,8 +202,8 @@
     en: {
       htmlLang: 'en',
       meta: {
-        title: 'Main Rules — Muhamed Ads',
-        desc: 'The Main Rules for the website, bots and services of the Muhamed Ads creative and technology network.'
+        title: 'Muhamed Ads — creative & technology network | Main rules',
+        desc: 'Main rules for using the website, bots, and digital services that are part of the Muhamed Ads creative and technology network.'
       },
       ui: {
         eyebrow: 'Network code',
@@ -216,8 +216,8 @@
         privacy: 'Privacy Rules',
         h1a: 'Main',
         h1b: 'Rules',
-        sub: 'One ruleset. No legal fog.',
-        sub2: 'What is allowed, what is not and how we protect your data — everything about the website, our bots and the other projects. No fine print, no hidden catches: honest and to the point.',
+        sub: 'General rules for the entire Muhamed Ads network.',
+        sub2: 'What’s allowed, what’s prohibited, and how we protect your data. All the rules and principles governing the operation of Muhamed Ads websites, bots, and projects in one place. Transparent, clear, and with no hidden conditions.',
         boot: { stamp: '19.10.2026', brand: 'Muhamed', net: 'Creative & Technology Network', bs1: 'Starting the codex', bs2: 'Main rules', bs3: 'Privacy rules', bs4: 'Codex ready', bhl: 'Network codex' },
         toc: 'Contents',
         print: 'Print',
