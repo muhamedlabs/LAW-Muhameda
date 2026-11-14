@@ -25,6 +25,20 @@ def is_blocked(filename):
 def home():
     return send_from_directory(BASE_DIR, "home.html")
 
+@app.route("/robots.txt")
+def robots_txt():
+    resp = send_from_directory(BASE_DIR, "robots.txt", mimetype="text/plain")
+    resp.headers["Cache-Control"] = "public, max-age=3600"
+    return resp
+
+
+@app.route("/sitemap.xml")
+def sitemap_xml():
+    resp = send_from_directory(BASE_DIR, "sitemap.xml", mimetype="application/xml")
+    resp.headers["Cache-Control"] = "public, max-age=3600"
+    return resp
+
+
 PAGES = {
     "documents/terms":          "documents/terms.html",
     "documents/privacy":        "documents/privacy.html",
