@@ -700,9 +700,22 @@ i.fa-solid.ar.fa-globe {
   opacity: 1;
   transform: none;
   transition:
-    opacity .35s calc(var(--i,0)*45ms + 110ms),
-    transform .45s var(--ease) calc(var(--i,0)*45ms + 110ms),
+    opacity .3s calc(var(--i,0)*30ms + 40ms),
+    transform .4s var(--ease) calc(var(--i,0)*30ms + 40ms),
     background .2s;
+}
+
+/* список языков открывается сразу целиком — без пустого «квадрата» перед появлением пунктов */
+.dd-lang .dd-item,
+.dd-lang .dd-head {
+  opacity: 1;
+  transform: none;
+  transition: background .2s;
+}
+
+.dd-lang.open .dd-item,
+.dd-lang.open .dd-head {
+  transition: background .2s;
 }
 
 .dd-item::before {
