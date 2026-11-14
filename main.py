@@ -27,6 +27,7 @@ def home():
 
 PAGES = {
     "documents/terms":          "documents/terms.html",
+    "documents/privacy":        "documents/privacy.html",
 }
 PAGES["documents"] = PAGES["documents/terms"]
 
