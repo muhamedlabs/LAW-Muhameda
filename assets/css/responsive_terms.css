@@ -308,3 +308,10 @@
 .pop-card .pop-x,.pop-card .pop-x:hover,.pop-card .pop-x:focus-visible{transform:none;transition:background .25s,border-color .25s}
 .pop-card .pop-x i{transform:none;transition:none}
 @media print{.pop-c{display:none}}
+
+html{overflow-x:clip}
+.hero{max-width:100%}
+.h1>span{max-width:100%}
+@media (max-width:640px){
+  .h1{font-size:clamp(20px,8.4vw,56px);column-gap:.25em}
+}
