@@ -42,6 +42,7 @@ def sitemap_xml():
 PAGES = {
     "documents/terms":          "documents/terms.html",
     "documents/privacy":        "documents/privacy.html",
+    "rules/game_quest":         "rules/game_quest.html",
 }
 PAGES["documents"] = PAGES["documents/terms"]
 
