@@ -1,7 +1,7 @@
 window.GQ_I18N = {
  "ru": {
-  "title": "Правила сообщества Game Quest — игровое сообщество",
-  "desc": "Правила игрового сообщества Game Quest: уважение, приватность, честная игра, один аккаунт, без спама и рекламы. 28 понятных пунктов в 6 разделах.",
+  "title": "Game Quest — игровые новости, обзоры и трейлеры | Правила сообщества",
+        "desc": "Устанавливаем единые правила поведения и взаимодействия участников сообщества Game Quest, помогая поддерживать уважительную атмосферу, честное общение и комфортные условия для всех пользователей.",
   "langname": "Русский",
   "toc.l": "Разделы правил",
   "chip.no": "Нельзя",
@@ -98,8 +98,8 @@ window.GQ_I18N = {
   "c6p5d": "Если мы меняем правила, актуальная дата указана вверху страницы."
  },
  "uk": {
-  "title": "Правила спільноти Game Quest — ігрова спільнота",
-  "desc": "Правила ігрової спільноти Game Quest: повага, приватність, чесна гра, один акаунт, без спаму й реклами. 28 зрозумілих пунктів у 6 розділах.",
+  "title": "Game Quest — ігрові новини, огляди та трейлери | Правила спільноти",
+  "desc": "Встановлюємо єдині правила поведінки та взаємодії учасників спільноти Game Quest, сприяючи підтримці атмосфери поваги, чесного спілкування та комфортних умов для всіх користувачів.",
   "langname": "Українська",
   "toc.l": "Розділи правил",
   "chip.no": "Не можна",
@@ -196,8 +196,8 @@ window.GQ_I18N = {
   "c6p5d": "Якщо ми змінюємо правила, актуальна дата вказана вгорі сторінки."
  },
  "en": {
-  "title": "Game Quest Community Rules — gaming community",
-  "desc": "Rules of the Game Quest gaming community: respect, privacy, fair play, one account per person, no spam or ads. 28 clear points in 6 sections.",
+  "title": "Game Quest — Gaming News, Reviews, and Trailers | Community Guidelines",
+  "desc": "We are establishing uniform rules of conduct and interaction for members of the Game Quest community to help foster a respectful atmosphere, honest communication, and a comfortable environment for all users.",
   "langname": "English",
   "toc.l": "Rule sections",
   "chip.no": "Not allowed",

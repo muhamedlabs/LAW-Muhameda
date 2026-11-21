@@ -1,7 +1,7 @@
 window.GQ_I18N = {
  "ru": {
-  "title": "Правила музыкального сообщества Nanson",
-  "desc": "Правила музыкального сообщества Nanson: музыка без авторских прав, уважение, приватность, один аккаунт, без спама и рекламы. 31 понятный пункт в 6 разделах.",
+  "title": "Nanson — музыкальные релизы, подборки | Правила сообщества",
+  "desc": "Мы устанавливаем общие принципы участия в музыкальном сообществе Nanson, определяя четкие правила использования музыки, защиты авторских прав и взаимодействия участников с целью поддержания открытой и гостеприимной атмосферы.",
   "langname": "Русский",
   "tape": "МУЗЫКА • БЕСПЛАТНО • БЕЗ АВТОРСКИХ ПРАВ • БЕСПЛАТНО • МУЗЫКА • БЕСПЛАТНО • БЕЗ АВТОРСКИХ ПРАВ • БЕСПЛАТНО • ",
   "toc.l": "Разделы правил",
@@ -104,8 +104,8 @@ window.GQ_I18N = {
   "c6p5d": "Если мы меняем правила, актуальная дата указана вверху страницы."
  },
  "uk": {
-  "title": "Правила музичної спільноти Nanson",
-  "desc": "Правила музичної спільноти Nanson: музика без авторських прав, повага, приватність, один акаунт, без спаму й реклами. 31 зрозумілий пункт у 6 розділах.",
+  "title": "Nanson — музичні релізи, добірки | Правила спільноти",
+     "desc": "Ми встановлюємо загальні принципи участі в музичній спільноті Nanson, визначаючи чіткі правила щодо використання музики, захисту авторських прав та взаємодії між учасниками з метою збереження відкритого та гостинного середовища.",
   "langname": "Українська",
   "tape": "МУЗИКА • БЕЗКОШТОВНО • БЕЗ АВТОРСЬКИХ ПРАВ • БЕЗКОШТОВНО • МУЗИКА • БЕЗКОШТОВНО • БЕЗ АВТОРСЬКИХ ПРАВ • БЕЗКОШТОВНО • ",
   "toc.l": "Розділи правил",
@@ -208,8 +208,8 @@ window.GQ_I18N = {
   "c6p5d": "Якщо ми змінюємо правила, актуальна дата вказана вгорі сторінки."
  },
  "en": {
-  "title": "Nanson Music Community Rules",
-  "desc": "Rules of the Nanson music community: copyright-free music, respect, privacy, one account per person, no spam or ads. 31 clear points in 6 sections.",
+  "title": "Nanson — music releases, compilations | Community guidelines",
+  "desc": "We establish common principles for participation in the Nanson music community, setting clear guidelines for music usage, copyright protection, and member interactions to maintain an open and welcoming environment.",
   "langname": "English",
   "tape": "MUSIC • FREE • NO COPYRIGHT • FREE • MUSIC • FREE • NO COPYRIGHT • FREE • ",
   "toc.l": "Rule sections",
