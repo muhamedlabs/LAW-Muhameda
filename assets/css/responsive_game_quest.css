@@ -1,16 +1,15 @@
-@media (min-width: 1600px) { html { font-size: 17px; } .doc, html.rail-on .doc { width: min(1200px, 100% - 260px); } }
-@media (min-width: 2200px) { html { font-size: 20px; } .doc, html.rail-on .doc { width: min(1400px, 100% - 380px); } }
+@media (min-width: 1600px){ html { font-size: 17px; } .doc, html.rail-on .doc { width: min(1200px, 100% - 260px); }}
+@media (min-width: 2200px){ html { font-size: 20px; } .doc, html.rail-on .doc { width: min(1400px, 100% - 380px); }}
 
-@media (max-width: 1000px) { .rail { display: none !important; } }
+@media (max-width: 1000px){ .rail { display: none !important; }}
 
-@media (max-width: 860px) {
+@media (max-width: 860px){
   .toc { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .lead { grid-template-columns: minmax(0, 1fr); }
   .lead__dates { grid-auto-flow: column; justify-content: start; gap: 32px; }
-  .doc { width: calc(100% - 32px); }
-}
+  .doc { width: calc(100% - 32px); }}
 
-@media (max-width: 760px) {
+@media (max-width: 760px){
   .toc__i { padding: 12px 14px; gap: 10px; } .toc__n { font-size: 1.25rem; } .toc__t { font-size: .88rem; }
   .lang__btn { height: 44px; }
   .pts { grid-template-columns: minmax(0, 1fr); }
@@ -18,59 +17,50 @@
   .qnav .seg { width: 100%; }
   .qnav .seg--primary { order: -1; }
   .brand { font-size: 1.05rem; } .brand__logo { height: 34px; }
-  .chap__no { font-size: 2.4rem; }
-}
+  .chap__no { font-size: 2.4rem; }}
 
-@media (max-width: 400px) {
+@media (max-width: 400px){
   .toc { grid-template-columns: minmax(0, 1fr); }
   .topbar { padding-inline: 12px; }
   .doc { width: calc(100% - 24px); }
   .totop { right: 14px; bottom: 14px; }
-  .lang__btn { padding: 0 14px; }
-}
+  .lang__btn { padding: 0 14px; }}
 
-@media (orientation: landscape) and (max-height: 520px) {
+@media (orientation: landscape) and (max-height: 520px){
   .hero h1 .h1a, .hero h1 .h1b { display: inline; }
   .qnav { flex-direction: row; width: auto; border-radius: 3rem; }
-  .qnav .seg { width: auto; }
-}
+  .qnav .seg { width: auto; }}
 
-@media (hover: none), (pointer: coarse) {
+@media (hover: none), (pointer: coarse){
   .rail { display: none !important; }
   .seg, .lang__opt { min-height: 46px; }
   .pts:hover .pt:not(:hover) { opacity: 1; }
-  .pt:hover { transform: none; }
-}
+  .pt:hover { transform: none; }}
 
-@supports (padding: env(safe-area-inset-top)) {
+@supports (padding: env(safe-area-inset-top)){
   .topbar { padding-top: calc(12px + env(safe-area-inset-top)); }
-  .totop { right: calc(14px + env(safe-area-inset-right)); bottom: calc(14px + env(safe-area-inset-bottom)); }
-}
+  .totop { right: calc(14px + env(safe-area-inset-right)); bottom: calc(14px + env(safe-area-inset-bottom)); }}
 
-@media (max-width: 760px) {
+@media (max-width: 760px){
   :root { --header-h: 56px; }
   .topbar { padding: 7px 14px; gap: 10px; background: rgba(9, 11, 6, .88); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255, 255, 255, .08); }
   .brand { gap: 8px; font-size: .95rem; text-shadow: none; }
   .brand__logo { height: 28px; }
   .lang__btn { height: 38px; padding: 0 12px; gap: 6px; font-size: .82rem; }
-  .lang__menu { top: calc(100% + 8px); }
-}
+  .lang__menu { top: calc(100% + 8px); }}
 
-@supports (padding: env(safe-area-inset-top)) {
-  @media (max-width: 760px) {
+@supports (padding: env(safe-area-inset-top)){
+  @media (max-width: 760px){
     :root { --header-h: calc(56px + env(safe-area-inset-top)); }
-    .topbar { padding-top: calc(7px + env(safe-area-inset-top)); }
-  }
-}
+    .topbar { padding-top: calc(7px + env(safe-area-inset-top)); }}}
 
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce){
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; transition-delay: 0ms !important; }
   .js .sc { transform: none; }
-  .js [data-reveal] { opacity: 1 !important; transform: none !important; }
-}
+  .js [data-reveal] { opacity: 1 !important; transform: none !important; }}
 
-@media print {
+@media print{
   .topbar, .rail, .totop, .qnav { display: none !important; }
   html, body { background: #fff !important; color: #000 !important; }
   .card { background: none; border-color: #999; box-shadow: none; backdrop-filter: none; }
@@ -78,5 +68,4 @@
   .chap__no { -webkit-text-stroke-color: #000; }
   .doc a { color: #000; }
   .chap, .pt { break-inside: avoid; }
-  .js .sc, .js [data-reveal] { opacity: 1 !important; transform: none !important; }
-}
+  .js .sc, .js [data-reveal] { opacity: 1 !important; transform: none !important; }}
