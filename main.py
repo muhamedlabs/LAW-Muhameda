@@ -39,10 +39,26 @@ def sitemap_xml():
     return resp
 
 
+@app.route("/assets/js/sw.js")
+def service_worker():
+    resp = send_from_directory(os.path.join(BASE_DIR, "assets", "js"), "sw.js", mimetype="application/javascript")
+    resp.headers["Cache-Control"] = "no-cache"
+    resp.headers["Service-Worker-Allowed"] = "/"
+    return resp
+
+
+@app.route("/assets/js/manifest.webmanifest")
+def web_manifest():
+    resp = send_from_directory(os.path.join(BASE_DIR, "assets", "js"), "manifest.webmanifest", mimetype="application/manifest+json")
+    resp.headers["Cache-Control"] = "public, max-age=3600"
+    return resp
+
+
 PAGES = {
     "documents/terms":          "documents/terms.html",
     "documents/privacy":        "documents/privacy.html",
     "rules/game_quest":         "rules/game_quest.html",
+    "rules/nanson":             "rules/nanson.html",
 }
 PAGES["documents"] = PAGES["documents/terms"]
 
