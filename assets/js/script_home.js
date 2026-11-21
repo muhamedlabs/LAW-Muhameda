@@ -2,6 +2,11 @@
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const eio = t => (1 - Math.cos(Math.PI * t)) / 2;
+  const dig = (v, len) => {
+    const s = String(v), z = Math.max(0, len - s.length);
+    return (z ? '<i class="lz">' + '0'.repeat(z) + '</i>' : '') + s;
+  };
 
   {
     $$('[data-type]').forEach(el => {
@@ -59,6 +64,17 @@
           '<div class="boot-status"><span class="bst-n"></span><span class="bst-t"></span></div>' +
           '<div class="boot-steps"><i></i><i></i><i></i><i></i></div>' +
         '</div>');
+      const hr = $('.boot-hud-r', boot);
+      if (hr && /^\d+(\.\d+)*$/.test(stamp)) {
+        const parts = stamp.split('.').map(Number), hf = v => parts.map(n => String(Math.round(n * v)).padStart(2, '0')).join('.');
+        hr.textContent = hf(0);
+        const h0 = performance.now();
+        (function hs(now) {
+          const t = Math.min((now - h0) / 2000, 1);
+          hr.textContent = hf(eio(t));
+          if (t < 1) requestAnimationFrame(hs);
+        })(h0);
+      }
       const num = $('.bn', boot);
 
       const st = $('.boot-status', boot), stN = $('.bst-n', boot), stT = $('.bst-t', boot);
@@ -129,8 +145,7 @@
         const v = Math.round(p * 100);
         if (v !== last) {
           last = v;
-          const s = String(v);
-          num.innerHTML = (s.length < 3 ? '<i>' + '0'.repeat(3 - s.length) + '</i>' : '') + s;
+          num.innerHTML = dig(v, 3);
         }
         const g = p >= .97 ? 3 : p >= .6 ? 2 : p >= .3 ? 1 : 0;
         if (g !== stage) setStage(g);
@@ -155,19 +170,19 @@
   {
     const els = $$('[data-count],[data-date]');
     const bootOn = document.documentElement.classList.contains('boot-on');
-    const ease = t => 1 - Math.pow(1 - t, 4);
     els.forEach(el => {
       const isDate = !!el.dataset.date;
       const target = isDate ? el.dataset.date.split('.').map(Number) : [Number(el.dataset.count)];
-      const fmt = v => target.map(n => String(Math.round(n * v)).padStart(2, '0')).join(isDate ? '.' : '');
-      if (reduce) { el.textContent = fmt(1); return; }
-      el.textContent = fmt(0);
+      const len = Math.max(String(target[0]).length, el.textContent.trim().length);
+      const fmt = v => isDate ? target.map(n => String(Math.round(n * v)).padStart(2, '0')).join('.') : dig(Math.round(target[0] * v), len);
+      if (reduce) { el.innerHTML = fmt(1); return; }
+      el.innerHTML = fmt(0);
       const dur = isDate ? 2000 : 1500;
       const begin = () => setTimeout(() => {
         const t0 = performance.now();
         (function f(now) {
           const t = Math.min((now - t0) / dur, 1);
-          el.textContent = fmt(ease(t));
+          el.innerHTML = fmt(eio(t));
           if (t < 1) requestAnimationFrame(f); else el.classList.add('done');
         })(t0);
       }, bootOn ? 600 : 650);
