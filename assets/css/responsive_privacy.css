@@ -280,6 +280,11 @@
 @media print{.pop-c{display:none}}
 
 html{overflow-x:clip}
+/* sticky-оглавление: body не должен быть контейнером прокрутки */
+body{overflow-x:clip;overflow-y:visible}
+.layout{overflow:visible}
+.toc{position:sticky;top:16px;align-self:start}
+@media (max-width:980px){.toc{position:relative;top:0}}
 .hero{max-width:var(--wrap)}
 .h1>span{max-width:100%}
 @media (max-width:640px){

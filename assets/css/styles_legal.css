@@ -25,7 +25,7 @@ html{scroll-behavior:smooth;scroll-padding-top:28px;-webkit-text-size-adjust:100
 body{
   margin:0;min-height:100vh;background:var(--ink);color:var(--white);
   font:400 16px/1.75 var(--font-b);letter-spacing:.01em;
-  padding-bottom:56px;overflow-x:hidden;
+  padding-bottom:56px;overflow-x:clip;
   -webkit-font-smoothing:antialiased;
 }
 ::selection{background:var(--pink);color:var(--white)}
