@@ -2,7 +2,7 @@
 html { background: var(--base); }
 
 .bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; background: var(--base); }
-.bg__img { position: absolute; inset: 0; background: url("/assets/images/background/nanson.webp") center / cover no-repeat; }
+.bg__img { position: absolute; inset: 0; background: url("/assets/images/background/projects/nanson.webp") center / cover no-repeat; }
 
 .bg__veil { position: absolute; inset: 0;
   background:
