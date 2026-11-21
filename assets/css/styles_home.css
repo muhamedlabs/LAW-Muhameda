@@ -227,7 +227,7 @@
   white-space: nowrap;
 }
 
-@media (min-width:1001px) and (max-height:760px) {
+@media (min-width:1001px) and (max-height:760px){
   .hero {
     padding-top: calc(var(--hdr) + .8rem);
     padding-bottom: 5.2rem;
@@ -244,8 +244,7 @@
 
   .facts>div {
     padding-top: .7rem;
-  }
-}
+  }}
 
 .mq {
   position: fixed;
@@ -320,21 +319,19 @@
   background: linear-gradient(transparent,var(--pink));
 }
 
-@media (max-width:1200px) {
+@media (max-width:1200px){
   .edge {
     display: none;
-  }
-}
+  }}
 
 .edge span {
   white-space: nowrap;
 }
 
-@media (max-height:680px) {
+@media (max-height:680px){
   .edge {
     display: none;
-  }
-}
+  }}
 
 .boot {
   display: none;
@@ -490,10 +487,15 @@ html.js:not(.noboot) .boot {
   text-shadow: 0 0 2.2rem rgba(var(--a),.35);
 }
 
+.lz,
 .boot-num i {
   font-style: normal;
   color: rgba(255,249,250,.14);
   text-shadow: none;
+}
+
+.facts b {
+  font-variant-numeric: tabular-nums;
 }
 
 .boot-num em {
@@ -591,12 +593,6 @@ html.js:not(.noboot) .boot {
   }
 }
 
-@keyframes bootOut {
-  to {
-    opacity: 0;
-    transform: scale(1.05);
-  }
-}
 
 @keyframes bootL {
   to {
@@ -868,7 +864,7 @@ html.js:not(.noboot) .boot {
   }
 }
 
-@media (max-width:560px) {
+@media (max-width:560px){
   .boot-hud-r {
     display: none;
   }
@@ -876,8 +872,7 @@ html.js:not(.noboot) .boot {
   .boot-status {
     font-size: .6rem;
     letter-spacing: .12em;
-  }
-}
+  }}
 
 .boot-num,
 .boot .bl {
@@ -969,7 +964,7 @@ html.js:not(.noboot):not(.go) .hdr .dd-lang {
   animation-play-state: paused;
 }
 
-@media (min-width:1181px) {
+@media (min-width:1181px){
   .nav {
     gap: .1rem;
   }
@@ -978,10 +973,9 @@ html.js:not(.noboot):not(.go) .hdr .dd-lang {
   .nav .dd-btn {
     padding: 0 .5rem;
     letter-spacing: .03em;
-  }
-}
+  }}
 
-@media (min-width:1181px) and (max-width:1320px) {
+@media (min-width:1181px) and (max-width:1320px){
   .nav>a,
   .nav .dd-btn {
     padding: 0 .36rem;
@@ -991,11 +985,9 @@ html.js:not(.noboot):not(.go) .hdr .dd-lang {
 
   .hdr .in {
     gap: .8rem;
-  }
-}
+  }}
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-reduced-motion:reduce){
   html.js:not(.noboot) .boot {
     display: none;
-  }
-}
+  }}

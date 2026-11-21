@@ -224,15 +224,6 @@ svg {
   display: none;
 }
 
-.ico.big {
-  width: 5.4rem;
-  height: 5.4rem;
-}
-
-.ico.big .mono {
-  font-size: 1.9rem;
-}
-
 .ar {
   width: 1.05rem;
   height: 1.05rem;
@@ -377,7 +368,7 @@ i.fa-solid.ar.fa-globe {
   display: flex;
   align-items: center;
   gap: .6rem;
-  width: min(80rem,100% - 2.5rem);
+  width: min(84rem,100% - 2.5rem);
 }
 
 .hdr .in {
@@ -700,22 +691,9 @@ i.fa-solid.ar.fa-globe {
   opacity: 1;
   transform: none;
   transition:
-    opacity .3s calc(var(--i,0)*30ms + 40ms),
-    transform .4s var(--ease) calc(var(--i,0)*30ms + 40ms),
+    opacity .35s calc(var(--i,0)*45ms + 110ms),
+    transform .45s var(--ease) calc(var(--i,0)*45ms + 110ms),
     background .2s;
-}
-
-/* список языков открывается сразу целиком — без пустого «квадрата» перед появлением пунктов */
-.dd-lang .dd-item,
-.dd-lang .dd-head {
-  opacity: 1;
-  transform: none;
-  transition: background .2s;
-}
-
-.dd-lang.open .dd-item,
-.dd-lang.open .dd-head {
-  transition: background .2s;
 }
 
 .dd-item::before {
@@ -808,24 +786,39 @@ i.fa-solid.ar.fa-globe {
   inset: 1px;
   z-index: -1;
   transform: none;
-  transition: background .3s,filter .3s;
+  transition: opacity .3s;
   background: linear-gradient(90deg,#d9123a,var(--pink));
   clip-path: polygon(0 0,100% 0,100% calc(100% - var(--cut) + .6px),calc(100% - var(--cut) + .6px) 100%,0 100%);
 }
 
-.dd-lang .dd-btn:hover::before,
-.dd-lang.open .dd-btn::before {
+.dd-lang .dd-btn {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.dd-lang .dd-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 1px;
+  z-index: -1;
+  height: auto;
+  transform: none;
+  opacity: 0;
   background: linear-gradient(90deg,var(--pink),#ff4d6d);
-  filter: brightness(1.12);
+  clip-path: polygon(0 0,100% 0,100% calc(100% - var(--cut) + .6px),calc(100% - var(--cut) + .6px) 100%,0 100%);
+  transition: opacity .3s;
+}
+
+.dd-lang .dd-btn:hover::after,
+.dd-lang.open .dd-btn::after {
+  opacity: 1;
+  transform: none;
 }
 
 .dd-lang .dd-btn:hover,
 .dd-lang.open .dd-btn {
   color: var(--white);
-}
-
-.dd-lang .dd-btn::after {
-  display: none;
 }
 
 .dd-lang .dd-panel {
@@ -873,22 +866,26 @@ i.fa-solid.ar.fa-globe {
 }
 
 .lg .code {
+  --cut: .32rem;
+  --code-fill: rgba(255,249,250,.07);
+  --code-line: rgba(255,249,250,.16);
   display: grid;
   place-items: center;
   width: 2.2rem;
   height: 2.2rem;
   flex: none;
-  background: rgba(255,249,250,.07);
-  box-shadow: inset 0 0 0 1px var(--line);
+  border: 1px solid transparent;
+  background:
+    linear-gradient(to top left,transparent calc(var(--cut) - .03rem),var(--code-fill) calc(var(--cut) - .03rem)) padding-box,
+    linear-gradient(to top left,transparent var(--cut),var(--code-line) var(--cut)) border-box;
   font: 700 .8rem var(--head);
   letter-spacing: .06em;
   color: var(--soft);
-  clip-path: polygon(0 0,100% 0,100% calc(100% - .45rem),calc(100% - .45rem) 100%,0 100%);
 }
 
 .lg.on .code {
-  background: var(--pink);
-  box-shadow: none;
+  --code-fill: var(--pink);
+  --code-line: var(--pink);
   color: var(--white);
 }
 
@@ -948,7 +945,7 @@ i.fa-solid.ar.fa-globe {
   transform: rotate(-45deg);
 }
 
-@media (min-width:1001px) and (max-width:1280px) {
+@media (min-width:1001px) and (max-width:1280px){
   .nav>a,
   .dd-btn {
     padding: 0 .55rem;
@@ -962,8 +959,7 @@ i.fa-solid.ar.fa-globe {
 
   .logo small {
     display: none;
-  }
-}
+  }}
 
 .hero {
   position: relative;
@@ -1074,15 +1070,15 @@ i.fa-solid.ar.fa-globe {
 }
 
 .lead {
-  max-width: 56rem;
   white-space: pre-line;
-  text-wrap: balance;
-  margin-top: 1.1rem;
-  color: #d3cbcd;
-  font-size: 1.02rem;
-  line-height: 1.75;
-  letter-spacing: .01em;
+  max-width: min(54rem,100%);
+  margin: 1.2rem auto 0;
+  color: #ddd5d7;
+  font-size: clamp(.95rem,.9rem + .3vw,1.2rem);
+  line-height: 1.8;
+  letter-spacing: .025em;
 }
+
 
 .hdr .in > .logo,
 .hdr .in > a.logo {
@@ -1093,7 +1089,7 @@ i.fa-solid.ar.fa-globe {
   min-width: 0;
 }
 
-@media (min-width: 1181px) {
+@media (min-width: 1181px){
   html:lang(ru) .nav,
   html:lang(uk) .nav {
     gap: .1rem;
@@ -1107,10 +1103,9 @@ i.fa-solid.ar.fa-globe {
     gap: .35rem;
     font-size: .6rem;
     letter-spacing: .01em;
-  }
-}
+  }}
 
-@media (min-width: 1181px) and (max-width: 1599px) {
+@media (min-width: 1181px) and (max-width: 1599px){
   html:lang(ru) .hdr .in,
   html:lang(uk) .hdr .in {
     gap: .8rem;
@@ -1119,10 +1114,9 @@ i.fa-solid.ar.fa-globe {
   html:lang(ru) .logo small,
   html:lang(uk) .logo small {
     display: none;
-  }
-}
+  }}
 
-@media (min-width: 1181px) and (max-width: 1299px) {
+@media (min-width: 1181px) and (max-width: 1299px){
   html:lang(ru) .nav>a,
   html:lang(uk) .nav>a,
   html:lang(ru) .nav .dd>.dd-btn,
@@ -1130,8 +1124,7 @@ i.fa-solid.ar.fa-globe {
     padding: 0 .35rem;
     font-size: .54rem;
     letter-spacing: 0;
-  }
-}
+  }}
 
 
 .cta {
@@ -1226,7 +1219,7 @@ i.fa-solid.ar.fa-globe {
   }
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-reduced-motion:reduce){
   *,
   *::before,
   *::after {
@@ -1242,8 +1235,7 @@ i.fa-solid.ar.fa-globe {
   .btn::after,
   .kick::after {
     display: none;
-  }
-}
+  }}
 
 html {
   -webkit-user-select: none;
@@ -1258,8 +1250,30 @@ textarea {
   user-select: text;
 }
 
-@media print {
+@media print{
   body {
     display: none!important;
-  }
+  }}
+
+a.dd-item::after {
+  content: "";
+  position: absolute;
+  left: .75rem;
+  top: 50%;
+  width: 2.75rem;
+  height: 2.75rem;
+  background: rgba(var(--c),.6);
+  filter: blur(14px);
+  opacity: 0;
+  transform: translateY(-50%) scale(.75);
+  transition: opacity .35s var(--ease), transform .35s var(--ease);
+  pointer-events: none;
+  z-index: -1;
 }
+a.dd-item .ico { transition: transform .35s var(--ease); }
+a.dd-item small { transition: color .3s var(--ease); }
+a.dd-item:hover::after, a.dd-item:focus-visible::after { opacity: .75; transform: translateY(-50%) scale(1.15); }
+a.dd-item:hover .ico, a.dd-item:focus-visible .ico { transform: scale(1.07) rotate(-2deg); }
+a.dd-item:hover small, a.dd-item:focus-visible small { color: rgb(var(--c)); }
+@media (prefers-reduced-motion: reduce){
+  a.dd-item::after, a.dd-item .ico, a.dd-item small { transition: none; }}

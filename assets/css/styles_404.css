@@ -167,8 +167,7 @@
   transform: scaleX(0);
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-reduced-motion:reduce){
   .n4 {
     stroke-dashoffset: 0;
-  }
-}
+  }}
